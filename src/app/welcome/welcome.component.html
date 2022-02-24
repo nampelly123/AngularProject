@@ -1,0 +1,24 @@
+<div>
+    <p>welcome <b>{{name}}</b>. Welcome to the Application</p>
+</div>
+
+<p>List of todos that you want to add.</p>
+<div ng-app="myApp" ng-controller="myCtrl">
+ 
+    <select ng-model="selectedName" ng-options="x for x in names">
+    </select>
+     
+    </div>
+     
+    <script>
+     
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope) {
+    $scope.names = ["111", "222", "333"];
+    });
+    </script>
+
+<div>
+    You can navigate to your todos <a routerLink="/todos">here</a>
+</div>
+

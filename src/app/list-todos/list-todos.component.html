@@ -1,0 +1,18 @@
+<table border="1">
+    <caption>List of Todos</caption>
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>Items</th>
+            <th>IsDone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- for(Todo todo : todos) -->
+        <tr *ngFor="let eachItem of todos">
+            <td>{{eachItem.id}}</td>
+            <td>{{eachItem.description}}</td>
+            <td>{{eachItem.isDone}}</td>
+        </tr>
+    </tbody>
+</table>
